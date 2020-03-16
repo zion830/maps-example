@@ -1,0 +1,2 @@
+rootProject.name='RssNewsReader'
+include ':app'
