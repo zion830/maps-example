@@ -1,11 +1,10 @@
 <resources>
     <string name="app_name">Maps</string>
+    <string name="err_msg">요청 실패</string>
 
-    <string-array name="category">
-        <item>카페</item>
-        <item>한식</item>
-        <item>양식</item>
-        <item>일식</item>
-        <item>중식</item>
-    </string-array>
+    <string name="category1">한식</string>
+    <string name="category2">양식</string>
+    <string name="category3">일식</string>
+    <string name="category4">중식</string>
+    <string name="category5">카페</string>
 </resources>

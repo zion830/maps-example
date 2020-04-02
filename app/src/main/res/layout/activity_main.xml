@@ -6,6 +6,9 @@
 
     <data>
 
+        <variable
+            name="viewModel"
+            type="zion830.com.maps.MainViewModel" />
     </data>
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
@@ -40,7 +43,7 @@
                 app:layout_constraintEnd_toEndOf="parent" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <LinearLayout
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/bottom_sheet"
             android:layout_width="match_parent"
             android:layout_height="100dp"
@@ -48,9 +51,20 @@
             android:orientation="horizontal"
             app:behavior_hideable="true"
             app:behavior_peekHeight="100dp"
+            android:gravity="center_vertical"
+            app:sheet_visibility="@{viewModel.bottomSheetVisibility}"
             app:layout_behavior="@string/bottom_sheet_behavior">
 
-
-        </LinearLayout>
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_margin="8dp"
+                android:background="@android:color/transparent"
+                android:onClick="@{view -> viewModel.hideBottomSheet()}"
+                android:src="@drawable/ic_close"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 </layout>
