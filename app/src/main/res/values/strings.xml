@@ -1,3 +1,11 @@
 <resources>
-    <string name="app_name">RssNewsReader</string>
+    <string name="app_name">Maps</string>
+
+    <string-array name="category">
+        <item>카페</item>
+        <item>한식</item>
+        <item>양식</item>
+        <item>일식</item>
+        <item>중식</item>
+    </string-array>
 </resources>

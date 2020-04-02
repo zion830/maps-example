@@ -1,4 +1,4 @@
-package zion830.com.rssnewsreader
+package zion830.com.maps
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

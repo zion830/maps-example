@@ -1,4 +1,4 @@
-package zion830.com.rssnewsreader
+package zion830.com.maps
 
 import org.junit.Test
 
